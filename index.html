@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Hartmann Produktsuche</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Kompatibilitäts-Suche</h1>
+    <label>🔍 Freitext für Websuche:</label><br>
+    <input type="text" id="searchQuery" placeholder="z. B. Cutinova Hydro 66047443"><br><br>
+
+    <label>🔢 Artikelnummer für Matching:</label><br>
+    <input type="text" id="matchQuery" placeholder="z. B. 66047443"><br><br>
+
+    <button onclick="searchProduct()">Jetzt suchen</button>
+
+    <div id="competitorResult" class="card"></div>
+    <div id="results"></div>
+    <script src="script.js"></script>
+</body>
+</html>
