@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Hartmann Produktsuche</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>🔍 Hartmann Produktsuche (Testversion)</h1>
+
+    <label for="query">Freitext für Websuche:</label>
+    <input type="text" id="query" placeholder="z. B. Fixierpflaster 2,5 cm">
+
+    <label for="article-number">Artikelnummer für Matching:</label>
+    <input type="text" id="article-number" placeholder="z. B. 900441">
+
+    <button id="search-button">Jetzt suchen</button>
+
+    <h2>🔎 Wettbewerbsprodukt:</h2>
+    <div id="competitor-result"></div>
+
+    <h2>💊 Mögliche Hartmann-Produkte:</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Produktgruppe</th>
+                <th>Artikelnummer</th>
+                <th>PZN</th>
+                <th>Größe</th>
+                <th>Ähnlichkeit (%)</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody id="results-body"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
