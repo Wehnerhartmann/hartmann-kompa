@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Lade JSON mit Hartmann-Produkten
         try {
-            const response = await fetch("hartmann_sauber_textmatch.json");
+            const response = await fetch("hartmann_sauber_textmatch_final.json");
             const hartmannData = await response.json();
 
             const input = `${query} ${articleNumber}`.toLowerCase();
